@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>RedStore/Ecommerce</title>
+    <script src="dropDown.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,7 +27,20 @@
                         <li><a href="./acc.html">Account</a></li>
                     </ul>
                 </nav>
+
                 <a href="./cart.html"><img src="./images/cart.png " class="cart "></a>
+                <button class="btn__menu btn__menu--open" onclick="openMenu()"><i class="fas fa-bars "></i></button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close " onclick="closeMenu() "><i class="fas fa-times "></i></button>
+                    <ul>
+                        <li class="backdrop__link"><a href="./index.html">Home</a></li>
+                        <li class="backdrop__link"><a href="./product.html">Products</a></li>
+                        <li class="backdrop__link"><a href="">About</a></li>
+                        <li class="backdrop__link"><a href="">Contact</a></li>
+                        <li class="backdrop__link"><a href="./acc.html">Account</a></li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="account-page">
