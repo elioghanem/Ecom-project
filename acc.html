@@ -52,11 +52,17 @@
                         <div class="col-2">
                             <div class="form-container">
                                 <div class="form-btn">
-                                    <a href="./acc.html"><span>Register</span></a>
-                                    <a href="./login.html"><span>Login</span></a>
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="register()">Register</span>
                                     <hr id="Indicator">
                                 </div>
 
+                                <form id="LoginForm">
+                                    <input type="text" placeholder="Username">
+                                    <input type="password" placeholder="password">
+                                    <button type="submit" class="btn">Login</button>
+                                    <a href="">Forgot password</a>
+                                </form>
                                 <form id="RegForm">
                                     <input type="text" placeholder="Username">
                                     <input type="email" placeholder="Email">
@@ -68,7 +74,7 @@
                     </div>
                 </div>
             </div>
-
+            <script src="acc.js"></script>
             <!--------footer-------->
             <div class=" footer ">
                 <div class="container ">
@@ -107,6 +113,7 @@
                 </div>
             </div>
     </section>
+
 
 </body>
 

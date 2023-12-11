@@ -417,6 +417,7 @@
             padding: 20px 0;
             margin: auto;
             box-shadow: 0px 0px 20px 0px rbga(0, 0, 0, 0.1);
+            overflow: hidden;
         }
         
         .form-container span {
@@ -462,13 +463,14 @@
             font-size: 12px;
         }
         
-        #Indicatore {
-            width: 100px;
-            border: none;
-            background: #ff523b;
-            height: 3px;
-            margin-top: 8px;
-            transform: translateX(100px);
+        #LoginForm {
+            left: -300px;
+            transition: all 1000ms ease;
+        }
+        
+        #RegForm {
+            left: 0px;
+            transition: all 1000ms ease;
         }
         
         #Indicator {
@@ -477,7 +479,8 @@
             background: #ff523b;
             height: 3px;
             margin-top: 8px;
-            transform: translateX(0);
+            transform: translateX(100px);
+            transition: all 1000ms ease;
         }
         
         .cart-page {
