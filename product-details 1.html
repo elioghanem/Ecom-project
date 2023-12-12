@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <title>RedStore/Ecommerce</title>
     <script src="dropDown.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +28,20 @@
                     <li><a href="./acc.html">Account</a></li>
                 </ul>
             </nav>
+
             <a href="./cart.html"><img src="./images/cart.png " class="cart "></a>
+            <button class="btn__menu btn__menu--open" onclick="openMenu()"><i class="fas fa-bars "></i></button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close " onclick="closeMenu() "><i class="fas fa-times "></i></button>
+                <ul>
+                    <li class="backdrop__link"><a href="./index.html">Home</a></li>
+                    <li class="backdrop__link"><a href="./product.html">Products</a></li>
+                    <li class="backdrop__link"><a href="">About</a></li>
+                    <li class="backdrop__link"><a href="">Contact</a></li>
+                    <li class="backdrop__link"><a href="./acc.html">Account</a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -35,19 +50,19 @@
             <div class="col-2">
 
 
-                <img src="./images/gallery-1.jpg">
+                <img src="./images/gallery-1.jpg" id="ProductImg">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <a href="./product-details 1.html"><img src="./images/gallery-1.jpg"></a>
+                        <img src="./images/gallery-1.jpg" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <a href="./product-details 2.html"><img src="./images/gallery-2.jpg"></a>
+                        <img src="./images/gallery-2.jpg" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <a href="./product-details 3.html"><img src="./images/gallery-3.jpg"></a>
+                        <img src="./images/gallery-3.jpg" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <a href="./product-details 4.html"><img src="./images/gallery-4.jpg"></a>
+                        <img src="./images/gallery-4.jpg" class="small-img">
                     </div>
                 </div>
             </div>
@@ -169,7 +184,7 @@
         </div>
 
     </div>
-
+    <script src="product.js"></script>
 </body>
 
 </html>
